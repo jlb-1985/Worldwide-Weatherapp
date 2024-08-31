@@ -1,0 +1,25 @@
+body {
+  background: linear-gradient(
+    45deg,
+    #b7d9eb,
+    /* Spindle */ #6e8ba0,
+    /* Bermuda Gray */ #4a6273 /* Blue Bayoux */
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  font-family: "lato";
+}
+
+/* idee om de  achtergrondkleur te veranderen aan de hand van het weer. Bij zonnig geel en bij nacht donker*/
+
+.weatherbox {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  display: block;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+}
