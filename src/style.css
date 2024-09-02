@@ -6,7 +6,8 @@ body {
   margin: 0;
   font-family: "lato";
 }
-/* idee om de  achtergrondkleur te veranderen aan de hand van het weer. Bij zonnig geel en bij nacht donker*/
+/* idee om de  achtergrondkleur te veranderen aan de hand van het weer. 
+Bij zonnig geel en bij nacht donker of met foto's / video's */
 
 .weatherbox {
   background-color: white;
