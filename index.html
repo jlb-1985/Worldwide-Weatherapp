@@ -15,21 +15,34 @@
   <body>
     <div class="weatherbox">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city.." required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input
+            type="submit"
+            value="Search"
+            class="search-form-submit-button"
+          />
         </form>
       </header>
       <main>
         <div>
-          <h1>Amsterdam</h1>
-          <p>
+          <h1 class="weather-app-city">Voorburg</h1>
+          <p class="weather-app-details">
             Saturday 14:00, sunny
             <br />
-            Humidity: 66%, Wind: 3 km/h
+            Humidity: <strong>66%, </strong> Wind: <strong>3 km/h</strong>
           </p>
         </div>
-        <div>☀️ 23°C</div>
+        <div class="weather-temp-container">
+          <div class="weather-icon">☀️</div>
+          <div class="temp">23</div>
+          <div class="celcius">°C</div>
+        </div>
       </main>
 
       <footer>

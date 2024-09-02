@@ -1,25 +1,82 @@
 body {
-  background: linear-gradient(
-    45deg,
-    #b7d9eb,
-    /* Spindle */ #6e8ba0,
-    /* Bermuda Gray */ #4a6273 /* Blue Bayoux */
-  );
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: linear-gradient(90deg, #f2d36e, #b7d9eb, #6e8ba0, #4a6273);
   background-size: cover;
-
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
   font-family: "lato";
 }
-
 /* idee om de  achtergrondkleur te veranderen aan de hand van het weer. Bij zonnig geel en bij nacht donker*/
 
 .weatherbox {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  display: block;
+
   max-width: 600px;
   margin: 30px auto;
   padding: 30px;
+}
+header {
+  padding: 15px;
+}
+
+.weather-ap-city {
+  font-weight: bold;
+  font-size: 45px;
+}
+
+strong {
+  color: #4a6273;
+}
+.search-form-input {
+  background-color: #f9f7fe;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  width: 80%;
+}
+
+.search-form-submit-button {
+  background-color: #ffd9008c;
+  border: none;
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0.692);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  padding: 10px;
+  width: 17%;
+}
+
+.weather-temp-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -120px;
+  margin-right: 20px;
+}
+
+.weather-icon {
+  font-size: 50px;
+  margin-top: 14px;
+  margin-right: 5px;
+}
+
+.temp {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.celcius {
+  font-size: 30px;
+}
+footer {
+  font-size: 14px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+a {
+  color: #4a6273;
 }
