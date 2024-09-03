@@ -24,13 +24,8 @@ header {
 
 .weather-app-city {
   font-size: 45px;
-
-  margin: 20px 0;
-
-  transition: color 0.3s ease-in-out;
-}
-.weather-app-city:hover {
   color: #4a6273;
+  margin: 20px 0;
 }
 
 strong {
