@@ -16,6 +16,8 @@ function refreshWeather(response) {
   humidityElement.innerHTML = response.data.temperature.humidity;
   windSpeedElement.innerHTML = response.data.wind.speed;
   dateElement.innerHTML = formatDate(date);
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -51,9 +53,17 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function getForecast(city) {
+  let apiKey = "135f02bffcta720ff4c241394b466o99";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
 
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data);
+  
+
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   let forecastHtml = "";
 
@@ -82,4 +92,5 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Voorburg");
-displayForecast();
+
+
