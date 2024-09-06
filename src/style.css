@@ -6,31 +6,34 @@ body {
   margin: 0;
   font-family: "lato";
 }
-/* idee om de  achtergrondkleur te veranderen aan de hand van het weer. 
-Bij zonnig geel en bij nacht donker of met foto's / video's */
 
 .weatherbox {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-
+  height: 500px;
   max-width: 600px;
   margin: 30px auto;
   padding: 30px;
+  position: relative;
 }
+
 header {
   padding: 15px;
 }
 
 .weather-app-city {
   font-size: 45px;
+  font-weight: 900;
   color: #4a6273;
   margin: 20px 0;
 }
 
 strong {
-  color: #4a6273;
+  color: #0c4c7e;
+  font-weight: 900;
 }
+
 .search-form-input {
   background-color: #4a62734d;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -67,7 +70,6 @@ strong {
   display: flex;
   justify-content: flex-end;
   margin-top: -140px;
-  margin-right: 20px;
 }
 
 .weather-icon {
@@ -75,16 +77,19 @@ strong {
 }
 
 .weather-icon:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
+
 .temp {
   font-size: 80px;
-
+  margin-left: 5px;
   transition: color 0.3s ease-in-out;
 }
+
 .temp:hover {
   color: #f2d36e;
 }
+
 .celcius {
   font-size: 30px;
   margin-top: 15px;
@@ -93,12 +98,54 @@ strong {
 .celcius:hover {
   color: #f2d36e;
 }
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-between;
+  
+  margin: 100px auto;
+}
+
+.weather-forecast-day {
+  flex: 1;
+  text-align: center;
+  margin: 0 10px;
+
+}
+
+.weather-forecast-date {
+  text-align: center;
+}
+
+.weather-forecast-icon img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.weather-forecast-icon:hover {
+  transform: scale(1.3);
+}
+
+.weather-forecast-temperatures {
+  display: flex;
+  justify-content:center;
+  gap: 10px;
+}
+
+.weather-forecast-temp {
+  display: inline;
+}
+
 footer {
   font-size: 14px;
-  margin-top: 100px;
   text-align: center;
+  
 }
 
 a {
   color: #4a6273;
 }
+
+
+
